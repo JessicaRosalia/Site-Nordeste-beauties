@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />
+
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/section-destinations.css">
+    <link rel="stylesheet" href="css/info-destinos.css">
     <link rel="stylesheet" href="css/index.css">
     <title>Belezas do Nordeste</title>
 </head>
@@ -15,13 +16,16 @@
 <body>
     <header>
         <div class="content">
-            <img src="images/bgH.png" alt="">
+            <a href="index.html">
+                <img src="images/logo-nordeste.gif" alt="Logo s=do site, mapa interativo do Nordeste">
+            </a>
             <nav>
                 <ul>
-                    <li class="atual"><a href="index.html">Home</a></li>
-                    <li><a href="praias.html">Praias</a></li>
-                    <li><a href="hoteis.html">Hotéis</a></li>
-                    <li><a href="destinos-diversos.html">Destinos diversos</a></li>
+                    <li class="home atual"><a href="index.html">Home</a></li>
+                    <li class="praias"><a href="praias.html">Praias</a></li>
+                    <li class="hoteis"><a href="hoteis.html">Hotéis</a></li>
+                    <li class="diversos"><a href="destinos-diversos.html">Destinos diversos</a></li>
+                    <img class="animacao" src="images/animation.png" alt="ilustração de carro de viagem">
                 </ul>
             </nav>
         </div>
@@ -65,7 +69,7 @@
                     separação por destino, você poderá também vislumbrar de mais detalhes das regiões navegando
                     pelo
                     mapa que se
-                    encontra <a href="">aqui</a>, no fim da página.</p>
+                    encontra <a href="#map">aqui</a>.</p>
             </div>
 
             <section class="preview">
@@ -98,31 +102,125 @@
         </div>
     </main>
 
-    <section class="map-nav">
-        <section>
-            <div class="ma">
-                <img src="images/ma-cinzaa.png" alt="">
+    <section id="map" class="map-nav">
+        <div class="content">
+            <h2>Navegue por região</h2>
+            <p>Clique em um estado para ver, por exemplo, se existem praias, hotéis ou outros destinos indicados para
+                esta região neste site.</p>
+            <div class="map">
+                <label class="pe" for="pe">
+                    <img class="pe-cor" src="images/pe-band.png" alt="mapa do estado do Pernambuco">
+                    <input id="pe" type="checkbox">
 
+                    <table class="data-pe">
+                        <caption>Pernambuco</caption>
+                        <tr>
+                            <th>Praia</th>
+                            <th>Hotel</th>
+                            <th>Outros</th>
+                        </tr>
+                        <tr>
+                            <td> <a href="praias.html?#places">2 encontrados</a> </td>
+                            <td> <a href="hoteis.html?#places">1 encontrado</a> </td>
+                            <td> <a href="#map">0 encontrados</a> </td>
+                        </tr>
+                    </table>
+                </label>
+
+                <label class="pb" for="pb">
+                    <img class="pb-cor" src="images/pb-band.png" alt="mapa do estado da Paraíba">
+                    <input id="pb" type="checkbox">
+
+                    <table class="data-pb">
+                        <caption>Paraíba</caption>
+                        <tr>
+                            <th>Praia</th>
+                            <th>Hotel</th>
+                            <th>Outros</th>
+                        </tr>
+                        <tr>
+                            <td> <a href="praias.html?#places">1 encontrado</a> </td>
+                            <td> <a href="#map">0 encontrados</a> </td>
+                            <td> <a href="#map">0 encontrados</a> </td>
+                        </tr>
+                    </table>
+                </label>
+
+                <label class="al" for="al">
+                    <img class="al-cor" src="images/al-band.png" alt="mapa do estado Alagoas">
+                    <input id="al" type="checkbox">
+
+                    <table class="data-al">
+                        <caption>Alagoas</caption>
+                        <tr>
+                            <th>Praia</th>
+                            <th>Hotel</th>
+                            <th>Outros</th>
+                        </tr>
+                        <tr>
+                            <td> <a href="#map">0 encontrados</a> </td>
+                            <td> <a href="hoteis.html?#places">1 encontrado</a> </td>
+                            <td> <a href="#map">0 encontrados</a> </td>
+                        </tr>
+                    </table>
+                </label>
+
+                <label class="rn" for="rn">
+                    <img class="rn-cor" src="images/rn-band.png" alt="mapa do estado do Rio Grande do Norte">
+                    <input id="rn" type="checkbox">
+
+                    <table class="data-rn">
+                        <caption>Rio Grande do Norte</caption>
+                        <tr>
+                            <th>Praia</th>
+                            <th>Hotel</th>
+                            <th>Outros</th>
+                        </tr>
+                        <tr>
+                            <td> <a href="praias.html?#places">1 encontrado</a> </td>
+                            <td> <a href="hoteis.html?#places">1 encontrado</a> </td>
+                            <td> <a href="destinos-diversos.html?#places">4 encontrados</a> </td>
+                        </tr>
+                    </table>
+                </label>
+
+                <label class="ce" for="ce">
+                    <img class="ce-cor" src="images/ce-band.png" alt="mapa do estado do Ceará">
+                    <input id="ce" type="checkbox">
+
+                    <table class="data-ce">
+                        <caption>Ceará</caption>
+                        <tr>
+                            <th>Praia</th>
+                            <th>Hotel</th>
+                            <th>Outros</th>
+                        </tr>
+                        <tr>
+                            <td> <a href="">1 encontrado</a> </td>
+                            <td> <a href="hoteis.html?#places">1 encontrado</a> </td>
+                            <td> <a href="">0 encontrados</a> </td>
+                        </tr>
+                    </table>
+                </label>
             </div>
-            <div class="pi">
-                <img src="images/pi-cinza.png" alt="">
-            </div>
-        </section>
+        </div>
     </section>
 
     <footer>
         <div class="content">
             <div class="nav-footer">
-                <img width="50"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS5jHHz96cWVJeB3P8_l6uwDM9bDdD2HblD-g&usqp=CAU"
-                    alt="">
+                <a href="index.html">
+                    <img src="images/logo-nordeste.gif" alt="">
+                </a>
                 <ul>
-                    <li><a href="">Praias</a></li>
-                    <li><a href="">Hotéis</a></li>
-                    <li><a href="">Destinos Diversos</a></li>
+                    <li><a href="praias.html">Praias</a></li>
+                    <li><a href="hoteis.html">Hotéis</a></li>
+                    <li><a href="destinos-diversos.html">Destinos Diversos</a></li>
                 </ul>
             </div>
             <p>&copy; Todos os direitos reservados</p>
+            <p>Designed and developed by <a href="https://github.com/jessicarf18" target="_blank">Rosália Fernandes</a>
+            </p>
         </div>
     </footer>
 

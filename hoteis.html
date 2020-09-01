@@ -5,21 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/info-destinos.css">
     <link rel="stylesheet" href="css/hoteis.css">
-    <link rel="stylesheet" href="css/section-destinations.css">
     <title>Hotéis do Nordeste</title>
 </head>
 
 <body>
     <header>
         <div class="content">
-            <img src="images/bgH.png" alt="">
+            <a href="index.html">
+                <img src="images/logo-nordeste.gif" alt="Logo s=do site, mapa interativo do Nordeste">
+            </a>
             <nav>
                 <ul>
-                    <li> <a href="index.html">Home</a> </li>
-                    <li><a href="praias.html">Praias</a></li>
-                    <li class="atual"><a href="hoteis.html">Hotéis</a></li>
-                    <li><a href="destinos-diversos.html">Destinos diversos</a></li>
+                    <li class="home"><a href="index.html">Home</a></li>
+                    <li class="praias"><a href="praias.html">Praias</a></li>
+                    <li class="hoteis atual"><a href="hoteis.html">Hotéis</a></li>
+                    <li class="diversos"><a href="destinos-diversos.html">Destinos diversos</a></li>
+                    <img class="animacao" src="images/animation.png" alt="ilustração de carro de viagem">
                 </ul>
             </nav>
         </div>
@@ -36,7 +39,7 @@
             </p>
         </div>
     </section>
-    <main>
+    <main id="places">
         <div class="content">
             <div class="cards">
                 <div class="card">
@@ -64,7 +67,10 @@
 
                     </figure>
                     <p>
-                        Hotel de Luxo localizado no alto de uma gigante <a href="">Falésia</a> , que reserva uma vista
+                        Hotel de Luxo localizado no alto de uma gigante <a
+                            href="https://pt.wikipedia.org/wiki/Fal%C3%A9sia#:~:text=Fal%C3%A9sias%20s%C3%A3o%20escarpas%20que%20terminam,ou%20instabilidade%20da%20parede%20rochosa."
+                            target="_blank">Falésia</a>
+                        , que reserva uma vista
                         maravilhosa para
                         bangalôs. Piscina com
                         borda infinita para a Lagoa de Roteiro, que por sua vez tem borda infinita para o mar. Da pra
@@ -123,7 +129,21 @@
     </main>
 
     <footer>
-        &copy; Todos os direitos reservados
+        <div class="content">
+            <div class="nav-footer">
+                <a href="index.html">
+                    <img src="images/logo-nordeste.gif" alt="">
+                </a>
+                <ul>
+                    <li><a href="praias.html">Praias</a></li>
+                    <li><a href="hoteis.html">Hotéis</a></li>
+                    <li><a href="destinos-diversos.html">Destinos Diversos</a></li>
+                </ul>
+            </div>
+            <p>&copy; Todos os direitos reservados</p>
+            <p>Designed and developed by <a href="https://github.com/jessicarf18" target="_blank">Rosália Fernandes</a>
+            </p>
+        </div>
     </footer>
 
 </body>

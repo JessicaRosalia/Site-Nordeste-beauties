@@ -7,6 +7,7 @@
     --color-title-secondary:rgb(5, 85, 116);
     --color-title-preview: rgb(2, 128, 144);
     --color-text-primary: rgba(41, 38, 38,0.85);
+    --color-text-links: rgb(15, 233, 211);
 }
 
 *{
@@ -39,6 +40,12 @@ body::after{
     margin: 0 auto;
 }
 
+@media(max-width:1040px){
+    .content{
+        max-width: 900px;
+    }
+}
+
 h2{
     color: var(--color-title-secondary) ;
     font-family: 'Kaushan Script', cursive;
@@ -54,6 +61,7 @@ li.atual{
 
 /* HEADER */
 header{
+    position: relative;
     padding-top: 10vh;
     padding-bottom:20vh;
 }
@@ -61,6 +69,7 @@ header{
 header .content{
     display: flex;
     justify-content: space-between;
+    align-items:center;
 }
 
 header nav ul{
@@ -69,7 +78,9 @@ header nav ul{
 }
 
 header nav ul li{
-    margin-left: 20px;
+    margin-left: 1.25rem;
+    padding-top:10px;
+    padding-bottom:5px;
 }
 
 header nav ul a{
@@ -77,11 +88,16 @@ header nav ul a{
     letter-spacing: 2px;
     font-weight: bold;
     text-decoration: none;
+    transition: 200ms color;
+}
+
+header nav ul a:hover{
+    color: var(--color-text-links);
 }
 
 header img{
     width: auto;
-    height: 100px;
+    height: 6.25rem;
 }
 
 /* COVER */
@@ -100,30 +116,118 @@ header img{
 
 .cover p{
     color: #fff;
-    margin-top:50px;
-    max-width: 600px;
+    margin-top:3.125rem;
+    max-width: 37.5rem;
 }
 
 /* FOOTER */
 footer{
-    background-color: #c1c1c1;
-    padding-top:3rem;
+    background-color: #e7e6e6;
+    padding-top:1.5rem;
     padding-bottom: 1rem;
 }
 
 footer .nav-footer{
-    margin-bottom:3rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+footer .nav-footer img{
+    width: 150px;
 }
 
 footer .nav-footer ul{
     display: flex;
 }
 footer .nav-footer li{
-    margin-left:1em;
+    margin-left:1.3em;
+}
+
+footer .nav-footer a{
+    color: rgb(99, 20, 35);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+footer .nav-footer a:hover{
+    color: rgb(218, 45, 76);
 }
 
 footer p{
     text-align: center;
+    margin-top:0.5rem;
+}
+
+footer p a{
+    text-decoration: none;
+    color: rgb(0, 0, 0,0.6);
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+
+/* animation header */
+
+@keyframes home{
+  0%{
+    left:60%;
+  }
+  100%{
+    left:65%;
+  }
+}
+
+@keyframes praias{
+  0%{
+    left:65%;
+  }
+  100%{
+    left:70%;
+  }
+}
+
+@keyframes hoteis{
+  0%{
+    left:70%;
+  }
+  100%{
+    left:75%;
+  }
+}
+
+@keyframes diversos{
+  0%{
+    left:75%;
+  }
+  100%{
+    left:85%;
+  }
+}
+
+img.animacao{
+  width:80px;
+  height: auto;
+  position: absolute;
+  top:20px;
+  left:60%;
+}
+
+
+li.home:hover~img.animacao{
+  animation: home 3s forwards;
+}
+
+li.praias:hover~img.animacao{
+  animation: praias 3s forwards;
+}
+
+
+li.hoteis:hover~img{
+  animation: hoteis 3s forwards;
+}
+
+li.diversos:hover~img{
+  animation: diversos 3s forwards;
 }
