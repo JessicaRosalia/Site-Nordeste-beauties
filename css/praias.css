@@ -1,0 +1,14 @@
+body{
+    background: url('../images/cover-praia-ipioca.jpg') var(--color-background-body) no-repeat;
+    background-size: 100vw 90vh;
+    letter-spacing: 1px;
+
+}
+.cover{
+    position: relative;
+}
+
+.cover span{
+    font-style: italic;
+}
+

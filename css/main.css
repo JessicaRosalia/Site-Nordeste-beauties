@@ -1,0 +1,129 @@
+@import "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400&family=Roboto:wght@300;400;700&family=Kalam:wght@300;400;700&display=swap";
+
+:root{
+    --color-background-body: rgba(230, 255, 252,0.6);
+    --color-cover-span: rgb(2, 195, 154);
+    --color-cover-card: rgba(255,255,255,0.6);
+    --color-title-secondary:rgb(5, 85, 116);
+    --color-title-preview: rgb(2, 128, 144);
+    --color-text-primary: rgba(41, 38, 38,0.85);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--color-text-primary);
+    font-family: 'Poppins','Roboto';
+    font-size:15px;
+    z-index: -2;
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 50vw;
+    height:90vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    
+}
+
+.content{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+h2{
+    color: var(--color-title-secondary) ;
+    font-family: 'Kaushan Script', cursive;
+}
+
+ul{
+    list-style: none;
+}
+
+li.atual{
+    border-bottom: 2px solid rgb(99, 20, 35);
+}
+
+/* HEADER */
+header{
+    padding-top: 10vh;
+    padding-bottom:20vh;
+}
+
+header .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin-left: 20px;
+}
+
+header nav ul a{
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header img{
+    width: auto;
+    height: 100px;
+}
+
+/* COVER */
+.cover{
+    height: 50vh;
+}
+
+.cover .content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+
+.cover p{
+    color: #fff;
+    margin-top:50px;
+    max-width: 600px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #c1c1c1;
+    padding-top:3rem;
+    padding-bottom: 1rem;
+}
+
+footer .nav-footer{
+    margin-bottom:3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .nav-footer ul{
+    display: flex;
+}
+footer .nav-footer li{
+    margin-left:1em;
+}
+
+footer p{
+    text-align: center;
+}

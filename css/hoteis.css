@@ -1,0 +1,4 @@
+body{
+    background: url('../images/cover-zorah-beach.jpg') var(--color-background-body) no-repeat;
+    background-size: 100vw 90vh;
+}
