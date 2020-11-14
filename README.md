@@ -5,6 +5,7 @@
 <p align="center">
   <img src="https://github.com/jessicarf18/Site-Nordeste-beauties/tree/master/gif-menu.gif" alt="animated GIF of the Menu">
 </p>
+![image](https://github.com/jessicarf18/Site-Nordeste-beauties/tree/master/images/images-readme/hoteis.png)
 <p align="center">
   <img src="https://github.com/jessicarf18/Site-Nordeste-beauties/tree/master/images/images-readme/hoteis.png" alt="Hotels page">
 </p>
