@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="https://github.com/jessicarf18/Site-Nordeste-beauties/tree/master/gif-menu.gif" alt="animated GIF of the Menu">
-  <img src="https://github.com/jessicarf18/Site-Nordeste-beauties/tree/master/images/images-readme/hoteis.png" alt="Hotels page">
+  <img src="https://github.com/jessicarf18/Site-Nordeste-beauties/master/images/images-readme/hoteis.png" alt="Hotels page">
   <img src="https://github.com/jessicarf18/Site-Nordeste-beauties/tree/master/images/images-readme/gif-region.gif" alt="animated GIF of the Region Section">
 </p>
 
