@@ -19,5 +19,5 @@
 - HTML
 - CSS
 
-<p> Made with ♥ by Jéssica Rosália :wave: [Get in touch!](https://www.linkedin.com/in/j%C3%A9ssica-ros%C3%A1lia-fernandes-310899133/) </p>
+Made with ♥ by Jéssica Rosália :wave: [Get in touch!](https://www.linkedin.com/in/j%C3%A9ssica-ros%C3%A1lia-fernandes-310899133/)
 
