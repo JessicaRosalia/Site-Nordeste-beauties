@@ -1,6 +1,6 @@
 <h1 align="center"> Site Nordeste beauties </h1>
 
-<p align="center"> Site desenvolvido sob proposta do curso Estartando Devs, em que devia ser criado um site usando puramente HTML e CSS. </p>
+<p align="center"> Website developed under the Estartando Devs course proposal, in which a website should be created using purely HTML and CSS. </p>
 
 <p align="center">
   <img src="https://github.com/jessicarf18/Site-Nordeste-beauties/tree/master/images/images-readme/gif-menu.gif" alt="animated GIF of the Menu">
